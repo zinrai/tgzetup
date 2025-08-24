@@ -1,0 +1,24 @@
+mappings:
+  # All binaries in bin/ directory
+  - from: "bin/limactl"
+    to: "/usr/local/bin/limactl"
+  - from: "bin/lima"
+    to: "/usr/local/bin/lima"
+  - from: "bin/kubectl.lima"
+    to: "/usr/local/bin/kubectl.lima"
+  - from: "bin/nerdctl.lima"
+    to: "/usr/local/bin/nerdctl.lima"
+  - from: "bin/docker.lima"
+    to: "/usr/local/bin/docker.lima"
+  - from: "bin/apptainer.lima"
+    to: "/usr/local/bin/apptainer.lima"
+  - from: "bin/podman.lima"
+    to: "/usr/local/bin/podman.lima"
+  
+  # Gzipped guestagent (automatically extracted)
+  - from: "share/lima/lima-guestagent.Linux-x86_64.gz"
+    to: "/usr/local/bin/lima-guestagent.Linux-x86_64"
+  
+  # Templates directory
+  - from: "share/lima/templates"
+    to: "~/.lima/_templates"
